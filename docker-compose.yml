@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    image: nginx:alpine          # Lightweight web server
+    container_name: lab-web
+    ports:
+      - "8080:80"                # Expose on Kali's port 8080
+    networks:
+      - labnet
+
+  db:
+    image: postgres:alpine       # Simple database
+    container_name: lab-db
+    environment:
+      POSTGRES_PASSWORD: labpass
+    networks:
+      - labnet
+    # No ports exposed — only internal communication
+
+networks:
+  labnet:
+    driver: bridge
