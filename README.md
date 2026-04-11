@@ -96,8 +96,8 @@ sudo usermod -aG docker $USER  # Log out e in depois desse passo.
  ### 4. Verificação e Testes
 
 1. **Comunicação entre VM e Host**: Ping entre o Host e Kali através da rede Host-only.
-2. **Entre Kali e Containers: curl http://localhost:8080 e entre containers usando o nome dos serviços.
-3. **Isolamento de contêineres: Database não exposta.
+2. **Entre Kali e Containers**: curl http://localhost:8080 e entre containers usando o nome dos serviços.
+3. **Isolamento de contêineres**: Database não exposta.
 
 ### 5. Aprendizados
 
@@ -110,7 +110,7 @@ sudo usermod -aG docker $USER  # Log out e in depois desse passo.
 
 1. **Virtualização**: VirtualBox.
 2. **OS**: Kali Linux.
-3. **Containers: Docker + Docker Compose.
+3. **Containers**: Docker + Docker Compose.
 4. **Networking**: NAT, Host-only, Docker bridge.
 5. **Ferramentas**: UFW, SSH config, apt.
 
